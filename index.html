@@ -33,6 +33,25 @@
       color: #bbbbbb;
       margin: 0px 0 70px 0;
     }
+
+    p {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    span {
+      color: #aaaaaa;
+    }
+
+    .small_text {
+      /* position: relative; */
+      /* max-width: 200px; */
+      margin-left: 300px;
+      margin-top: 10px;
+      padding: 0px;
+      /* padding-left: 300px; */
+      /* padding-top:  -700px; */
+    }
+
     p {
       color: rgba(255, 255, 255, 1);
       background: black;
@@ -59,6 +78,8 @@
       -moz-transition: height 0.5s;
     }
 
+   
+
     small {
       opacity: 0;
     }
@@ -73,6 +94,7 @@
 
     .first {
       background-image: url("https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/01/1515005599-miniature-pinscher.jpg");
+      position: relative;
     }
     .second {
       background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1094874726.png?crop=0.542xw:0.814xh;0.0472xw,0.127xh&resize=640:*");
@@ -83,6 +105,7 @@
     .price {
       float: bottom right;
     }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 50px;
@@ -110,27 +133,43 @@
 <body>
   <h1>Devin's Dog Watch</h1>
   <h2>For dogs of all shapes and sizes</h2>
-  <div class="small first">
-    <p>
-      Small Dog Breed <span class="price">$5</span><br />
-      <small>
-        Pug
-        Yorkshire Terrier
-        Corgi
-        Affenpinscher
-        Lhasa Apso
-        Cairn Terrier
-        Miniature American Eskimo
-        Italian Greyhound
-        Brussels Griffon
-        Schipperke
-        Chinese Crested Dog
-        Shetland Sheepdog
-      </small>
-    </p>
-  </div>
 
-  <div class="medium second">
+
+    <div class="small first">
+      <p>
+        Small Dog Breed <span class="price">$5</span><br />
+      </p>
+    </div>
+    <div class="small_text">
+      <span>Pug</span></br>
+      <span>Yorkshire Terrier</span></br>
+      <span>Corgi</span></br>
+      <span>Affenpinscher</span></br>
+      <span>Lhasa Apso</span></br>
+      <span>Cairn Terrier</span></br>
+      <span>Miniature American Eskimo</span></br>
+      <span>Italian Greyhound</span></br>
+      <span>Brussels Griffon</span></br>
+      <span>Schipperke</span></br>
+      <span>Chinese Crested Dog</span></br>
+      <span>Shetland Sheepdog</span></br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="medium second">
     <p>
       Medium Dog Breed <span class="price">$10</span><br />
       <small
@@ -168,7 +207,7 @@
         Caucasian Shephe</small
       >
     </p>
-  </div>
+  </div> -->
 
   <script>
     $("div").on("click", function () {
