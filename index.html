@@ -14,7 +14,7 @@
       background: #232323;
     }
     div {
-      height: 200px;
+      height: 220px;
       background-size: contain;
       background-repeat: no-repeat;
       position: relative;
@@ -39,17 +39,16 @@
     }
 
     span {
-      color: #aaaaaa;
+      color: rgba(255, 255, 255, 1);
     }
 
     .small_text {
-      /* position: relative; */
-      /* max-width: 200px; */
-      margin-left: 300px;
-      margin-top: 10px;
-      padding: 0px;
-      /* padding-left: 300px; */
-      /* padding-top:  -700px; */
+
+    margin-left: 326px;
+    margin-top: -215px;
+
+    padding: 0px;
+  
     }
 
     p {
@@ -73,6 +72,8 @@
       bottom: 0;
       margin: 0;
       height: 30px;
+      width: 538px;
+      max-width: 600px;
       transition: height 0.5s;
       -webkit-transition: height 0.5s;
       -moz-transition: height 0.5s;
@@ -95,6 +96,7 @@
     .first {
       background-image: url("https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/01/1515005599-miniature-pinscher.jpg");
       position: relative;
+      margin-top: 311px;
     }
     .second {
       background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1094874726.png?crop=0.542xw:0.814xh;0.0472xw,0.127xh&resize=640:*");
@@ -105,6 +107,8 @@
     .price {
       float: bottom right;
     }
+
+  
 
     @media (max-width: 600px) {
       h1 {
@@ -133,42 +137,26 @@
 <body>
   <h1>Devin's Dog Watch</h1>
   <h2>For dogs of all shapes and sizes</h2>
-
-
     <div class="small first">
       <p>
-        Small Dog Breed <span class="price">$5</span><br />
+        <span id="small-span">Small Dog Breed <span class="price">$5</span><br />
+        <div class="small_text">
+          <span>Pug</span></br>
+          <span>Yorkshire Terrier</span></br>
+          <span>Corgi</span></br>
+          <span>Affenpinscher</span></br>
+          <span>Lhasa Apso</span></br>
+          <span>Cairn Terrier</span></br>
+          <span>Miniature American Eskimo</span></br>
+          <span>Italian Greyhound</span></br>
+          <span>Brussels Griffon</span></br>
+          <span>Schipperke</span></br>
+          <span>Chinese Crested Dog</span></br>
+          <span>Shetland Sheepdog</span></br>
+        </div>
       </p>
     </div>
-    <div class="small_text">
-      <span>Pug</span></br>
-      <span>Yorkshire Terrier</span></br>
-      <span>Corgi</span></br>
-      <span>Affenpinscher</span></br>
-      <span>Lhasa Apso</span></br>
-      <span>Cairn Terrier</span></br>
-      <span>Miniature American Eskimo</span></br>
-      <span>Italian Greyhound</span></br>
-      <span>Brussels Griffon</span></br>
-      <span>Schipperke</span></br>
-      <span>Chinese Crested Dog</span></br>
-      <span>Shetland Sheepdog</span></br>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
   <!-- <div class="medium second">
     <p>
       Medium Dog Breed <span class="price">$10</span><br />
